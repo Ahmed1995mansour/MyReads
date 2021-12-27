@@ -1,92 +1,42 @@
-# MyReads Project
+# Welcome to MyReads App
 
-This is the starter template for the final assessment project for Udacity's React Fundamentals course. The goal of this template is to save you time by providing a static example of the CSS and HTML markup that may be used, but without any of the React code that is needed to complete the project. If you choose to start with this template, your job will be to add interactivity to the app by refactoring the static code in this template.
+MyReads App helps you organize the books you are interested in, it allows you to put books onto three different shelves
 
-Of course, you are free to start this project from scratch if you wish! Just be sure to use [Create React App](https://github.com/facebookincubator/create-react-app) to bootstrap the project.
+- Currently Reading
+- Want to read
+- Read
 
-## TL;DR
+### Main Page
 
-To get started developing right away:
+- On the main page you find three sections every one indicates a shelf, every section contains the books related to it, every book is displayed as its cover, title, and athuthor/s, also has control options that allow the user to move the book from one shelf to another.
+  At- Bottom of the screen, you find an add-icon that allows you to navigate to the search page.
 
-* install all project dependencies with `npm install`
-* start the development server with `npm start`
+### Search Page
 
-## What You're Getting
-```bash
-├── CONTRIBUTING.md
-├── README.md - This file.
-├── SEARCH_TERMS.md # The whitelisted short collection of available search terms for you to use with your app.
-├── package.json # npm package manager file. It's unlikely that you'll need to modify this.
-├── public
-│   ├── favicon.ico # React Icon, You may change if you wish.
-│   └── index.html # DO NOT MODIFY
-└── src
-    ├── App.css # Styles for your app. Feel free to customize this as you desire.
-    ├── App.js # This is the root of your app. Contains static HTML right now.
-    ├── App.test.js # Used for testing. Provided with Create React App. Testing is encouraged, but not required.
-    ├── BooksAPI.js # A JavaScript API for the provided Udacity backend. Instructions for the methods are below.
-    ├── icons # Helpful images for your app. Use at your discretion.
-    │   ├── add.svg
-    │   ├── arrow-back.svg
-    │   └── arrow-drop-down.svg
-    ├── index.css # Global styles. You probably won't need to change anything here.
-    └── index.js # You should not need to modify this file. It is used for DOM rendering only.
-```
+- The very top section you find search bar allows you to search through books.
+- For every book in the search results you also find the control options that allow you to move the book on your desired shelf.
 
-Remember that good React design practice is to create new JS files for each component and use import/require statements to include them where they are needed.
+## Installation
 
-## Backend Server
+### Via CMD
 
-To simplify your development process, we've provided a backend server for you to develop against. The provided file [`BooksAPI.js`](src/BooksAPI.js) contains the methods you will need to perform necessary operations on the backend:
+- to install dependencies enter `npm install`
+- to launch the app enter `npm start`
 
-* [`getAll`](#getall)
-* [`update`](#update)
-* [`search`](#search)
+## Programming Languages
 
-### `getAll`
+This app is developed using [JavaScript](https://www.javascript.com/) along side with [React](https://reactjs.org/).
 
-Method Signature:
+## Packages
 
-```js
-getAll()
-```
+This App developped using the following packages:
 
-* Returns a Promise which resolves to a JSON object containing a collection of book objects.
-* This collection represents the books currently in the bookshelves in your app.
+- [`react-router`](/packages/react-router)
+- [`react-router-dom`](/packages/react-router-dom)
+- [`react-dom`](https://reactjs.org/docs/react-dom.html)
+- [`mdbreact`](https://mdbootstrap.com/)
+- [`animate.css`](https://animate.style/)
 
-### `update`
+## About
 
-Method Signature:
-
-```js
-update(book, shelf)
-```
-
-* book: `<Object>` containing at minimum an `id` attribute
-* shelf: `<String>` contains one of ["wantToRead", "currentlyReading", "read"]  
-* Returns a Promise which resolves to a JSON object containing the response data of the POST request
-
-### `search`
-
-Method Signature:
-
-```js
-search(query)
-```
-
-* query: `<String>`
-* Returns a Promise which resolves to a JSON object containing a collection of a maximum of 20 book objects.
-* These books do not know which shelf they are on. They are raw results only. You'll need to make sure that books have the correct state while on the search page.
-
-## Important
-The backend API uses a fixed set of cached search results and is limited to a particular set of search terms, which can be found in [SEARCH_TERMS.md](SEARCH_TERMS.md). That list of terms are the _only_ terms that will work with the backend, so don't be surprised if your searches for Basket Weaving or Bubble Wrap don't come back with any results.
-
-## Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). You can find more information on how to perform common tasks [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
-
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
-
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+MyReads is developed and maintained by [Ahmed Mansour](https://github.com/Ahmed1995mansour)
